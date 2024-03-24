@@ -1,0 +1,194 @@
+{% extends "index.html" %}
+
+{% block content %}
+      <div class="row px-5 mt-5">
+        <h3>Categories</h3>
+      </div>
+
+      <div class="row px-3">
+        <div class="container px-5">
+          <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="../static/img/img-cement.png"
+                  class="card-img-top"
+                  alt="Sand Image"
+                  style="height: 190px;"
+                />
+                <div class="card-body p-4">
+                  <h5 class="card-title">Cement</h5>
+                  <p class="card-text">
+                    <ul>
+                        <li>
+                            Highest Price: Rs. {{ offer_prices['cement']['max_val'] }}
+                        </li>
+                        <li>
+                            Lowest Price: Rs. {{ offer_prices['cement']['min_val'] }}
+                        </li>
+                        <li>
+                            Popular Brand: {{ offer_prices['cement']['pop_sel'] }}
+                        </li>
+                    </ul>
+                  </p>
+                  <a href="/categories/cement" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img
+                  src="../static/img/img-sand.jpeg"
+                  class="card-img-top"
+                  alt="Sand Image"
+                  style="height: 190px;"
+                />
+                <div class="card-body p-4">
+                  <h5 class="card-title">Sand</h5>
+                  <p class="card-text">
+                    <ul>
+                        <li>
+                            Highest Price: Rs.{{ offer_prices['sand']['max_val'] }}
+                        </li>
+                        <li>
+                            Lowest Price: Rs.{{ offer_prices['sand']['min_val'] }}
+                        </li>
+                        <li>
+                            Popular Brand: {{ offer_prices['sand']['pop_sel'] }}
+                        </li>
+                    </ul>
+                  </p>
+                  <a href="/categories/sand" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+            </div>
+
+
+            
+            <div class="col">
+              <div class="card">
+                <img
+                  src="../static/img/img-steel.jpg"
+                  class="card-img-top"
+                  alt="Steel Image"
+                  style="height: 190px;"
+                />
+                <div class="card-body p-4">
+                  <h5 class="card-title">Steel</h5>
+                  <p class="card-text">
+                    <ul>
+                        <li>
+                            Highest Price: Rs.{{ offer_prices['steel']['max_val'] }}
+                        </li>
+                        <li>
+                            Lowest Price: Rs.{{ offer_prices['steel']['min_val'] }}
+                        </li>
+                        <li>
+                            Popular Brand: {{ offer_prices['steel']['pop_sel'] }}
+                        </li>
+                    </ul>
+                  </p>
+                  <a href="/categories/steel" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+            <div class="col">
+              <div class="card">
+                  <img
+                  src="../static/img/img-brick.jpg"
+                  class="card-img-top"
+                  alt="brick Image"
+                  style="height: 190px;"
+                />
+                  <div class="card-body p-4">
+                    <h5 class="card-title">Brick</h5>
+                    <p class="card-text">
+                      <ul>
+                          <li>
+                              Highest Price: Rs.{{ offer_prices['brick']['max_val'] }}
+                          </li>
+                          <li>
+                              Lowest Price: Rs.{{ offer_prices['brick']['min_val'] }}
+                          </li>
+                          <li>
+                              Popular Brand: {{ offer_prices['brick']['pop_sel'] }}
+                          </li>
+                      </ul>
+                    </p>
+                    <a href="/categories/brick" class="btn btn-primary">Know More</a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img
+                  src="../static/img/img-aggregate.jpg"
+                  class="card-img-top"
+                  alt="Aggregate Image"
+                  style="height: 190px;"
+                />
+                <div class="card-body p-4">
+                  <h5 class="card-title">Aggregates</h5>
+                  <p class="card-text">
+                    <ul>
+                        <li>
+                            Highest Price: Rs.{{ offer_prices['aggregates']['max_val'] }}
+                        </li>
+                        <li>
+                            Lowest Price: Rs.{{ offer_prices['aggregates']['min_val'] }}
+                        </li>
+                        <li>
+                            Popular Brand: {{ offer_prices['aggregates']['pop_sel'] }}
+                        </li>
+                    </ul>
+                  </p>
+                  <a href="/categories/aggregates" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="col">
+              <div class="card">
+                <img
+                  src="../static/img/img-tiles.jpg"
+                  class="card-img-top"
+                  alt="Floor Tiles Image"
+                  style="height: 190px;"
+                />
+                <div class="card-body p-4">
+                  <h5 class="card-title">Tiles</h5>
+                  <p class="card-text">
+                    <ul>
+                        <li>
+                            Highest Price: Rs.{{ offer_prices['tiles']['max_val'] }}
+                        </li>
+                        <li>
+                            Lowest Price: Rs.{{ offer_prices['tiles']['min_val'] }}
+                        </li>
+                        <li>
+                            Popular Brand: {{ offer_prices['tiles']['pop_sel'] }}
+                        </li>
+                    </ul>
+                  </p>
+                  <a href="/categories/tiles" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row load-more py-5 mx-4">
+          <a href="/summary" class="btn btn-primary">Summary</a>
+        </div>
+      </div>
+
+  
+      {% endblock %}

@@ -1,0 +1,54 @@
+1700110323957	geckodriver	INFO	Listening on 127.0.0.1:64950
+1700110327004	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64951" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ANSIKA~1\\AppData\\Local\\Temp\\rust_mozprofileuN4dWC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1700110327859	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1700110327982	Marionette	INFO	Listening on port 64960
+WebDriver BiDi listening on ws://127.0.0.1:64951
+Read port: 64960
+1700110328212	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64951/devtools/browser/2f1f4956-0f54-495f-abcb-91220d5aa169
+JavaScript error: https://inampro.nic.in/writereaddata/js/Sorting/dataTables.bootstrap.min.js, line 5: TypeError: f is undefined
+1700110357965	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1700282692644	geckodriver	INFO	Listening on 127.0.0.1:51649
+1700282695684	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51650" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ANSIKA~1\\AppData\\Local\\Temp\\rust_mozprofileQGBHSP"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1700282696441	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1700282696607	Marionette	INFO	Listening on port 51657
+WebDriver BiDi listening on ws://127.0.0.1:51650
+Read port: 51657
+1700282696884	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51650/devtools/browser/d8ab62d4-0a22-4f9f-bb5e-34f0b0908246
+JavaScript error: https://inampro.nic.in/writereaddata/js/Sorting/dataTables.bootstrap.min.js, line 5: TypeError: f is undefined
+1700282728512	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1700282810649	geckodriver	INFO	Listening on 127.0.0.1:62126
+1700282813683	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62127" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ANSIKA~1\\AppData\\Local\\Temp\\rust_mozprofileMLVmFL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1700282814009	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1700282814105	Marionette	INFO	Listening on port 62141
+WebDriver BiDi listening on ws://127.0.0.1:62127
+Read port: 62141
+1700282814245	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62127/devtools/browser/e8fd9881-18a8-4908-801f-6f8bf7686981
+1700282818466	Marionette	INFO	Stopped listening on port 62141
+Dynamically enable window occlusion 1
+1700286965322	geckodriver	INFO	Listening on 127.0.0.1:62576
+1700286968363	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62577" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ANSIKA~1\\AppData\\Local\\Temp\\rust_mozprofileV5FIPT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1700286968672	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1700286968767	Marionette	INFO	Listening on port 62584
+WebDriver BiDi listening on ws://127.0.0.1:62577
+Read port: 62584
+1700286968931	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62577/devtools/browser/fcc6ee68-7575-4a44-bffc-105ee6b14d5e
+JavaScript error: https://inampro.nic.in/writereaddata/js/Sorting/dataTables.bootstrap.min.js, line 5: TypeError: f is undefined
+1700286999263	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1700287251555	Marionette	INFO	Stopped listening on port 62584
+Dynamically enable window occlusion 1

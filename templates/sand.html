@@ -1,0 +1,202 @@
+{% extends "index.html" %} 
+{% block content %}
+<div class="row px-5 mt-5">
+  <h3>Sand</h3>
+</div>
+
+<div class="row px-5 my-4">
+  <div class="cards-container">
+    <div class="col-md-2">
+      <div class="card text-center">
+        <div class="card-content">
+          <div class="row my-2">
+            <h2>{{sand_min_value}}</h2>
+          </div>
+          <div class="row my-2">
+            <h5>Lowest Price</h5>
+            <p class="units">-- in Rs. --</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card text-center">
+        <div class="card-content">
+          <div class="row my-2">
+            <h2>{{sand_max_value}}</h2>
+          </div>
+          <div class="row my-2">
+            <h5>Highest Price</h5>
+            <p class="units">-- in Rs. --</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card text-center">
+        <div class="card-content">
+          <div class="row my-2">
+            <h5>{{closest_seller}}</h5>
+          </div>
+          <div class="row my-2">
+            <h5>Popular </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row px-5 my-4">
+  <div class="col">
+    <div class="row">
+      <h4>Bar Chart</h4>
+    </div>
+    <div class="chart row">
+      <canvas id="barChart" width="900" height="400">
+        <p>Bar Chart here</p>
+      </canvas>
+    </div>
+  </div>
+</div>
+
+<div class="row px-5 my-4">
+  <div class="col">
+    <div class="row">
+      <h4>Pie Chart</h4>
+    </div>
+    <div class="chart row">
+      <canvas id="pieChart">
+        <p>Pie Chart here</p>
+      </canvas>
+    </div>
+  </div>
+</div>
+
+<div class="table_container row px-5 my-4">
+  <form method="post" id="selectionForm">
+    <table
+      id="example"
+      class="table table-striped"
+      class="display"
+      style="width: 100%"
+    >
+      <thead>
+        <tr>
+          <th>Select</th>
+          {% for col in headings %}
+          <th>{{ col }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for index,row in table_data%}
+        <tr>
+          <td>
+            <input type="checkbox" name="selected_rows" value="{{ index }}" />
+          </td>
+          {% for cell in row %}
+          <td>{{ cell }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-primary" id="getOfferPrice">
+      Get Offer Price
+    </button>
+  </form>
+
+  {% if offer_price is defined and offer_price|length > 0 %}
+  <h2>Selected Offer Price: {{ offer_price.iloc[0] }}</h2>
+{% endif %}
+
+
+    <script>
+      document.getElementById("getOfferPrice").addEventListener("click", function() {
+          // Submit the form when the button is clicked
+          document.getElementById("selectionForm").submit();
+      });
+  </script>
+
+
+  <div class="row p-5 my-3">
+    <div id="sumOfferPrice"></div>
+  </div>
+</div>
+
+<script>
+
+    var data_bar = {
+      labels: {{ labels | safe }},
+      datasets: [
+          {
+              label: 'Sand Sellers',
+              data: {{ values | safe }},
+              borderWidth: 1
+          }
+      ]
+  };
+
+  var option_bar = {
+    animations: {
+      tension: {
+        duration: 1000,
+        easing: 'easeInCubic',
+        from: 1,
+        to: 0,
+        loop: true
+      }
+    },
+    layout: {
+      padding: 20
+    },
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  };
+
+    var ctx_bar = document.getElementById("barChart");
+
+    var bar_chart = new Chart(ctx_bar, {
+      type:'bar',
+      data: data_bar,
+      options: option_bar
+    })
+
+
+
+    var ctx_pie = document.getElementById("pieChart");
+    var labels = {{ pie_labels | tojson | safe }};
+    var values = {{ pie_values | tojson | safe }};
+
+
+      var option_pie = {
+        title: {
+            display: true,
+            text: "Sand Sellers"
+        },
+        legend: {
+          position: 'right',
+          align: 'center'
+      }
+    }
+
+        var pie_chart = new Chart(ctx_pie, {
+          type: 'pie',
+          data: {
+            labels: labels,
+            datasets: [{
+                data: values,
+                borderWidth: 1
+            }]
+        },
+          options: option_pie
+        });
+</script>
+
+{% endblock %}

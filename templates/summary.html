@@ -1,0 +1,113 @@
+{% extends "index.html" %}
+
+{% block content %}
+      <div class="row px-5 mt-5">
+        <h3>Summary</h3>
+      </div>
+
+      
+        <div class="row px-5 my-4">
+            <div class="cards-container">
+            <div class="col-md-2">
+                <div class="card text-center">
+                <div class="card-content">
+                    <div class="row my-2">
+                    <h5>{{ cement_data }}</h5>
+                    </div>
+                    <div class="row my-2">
+                    <h5>Cement Price</h5>
+                    <p class="units">-- in Rs. --</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        
+            <div class="col-md-2">
+                <div class="card text-center">
+                <div class="card-content">
+                    <div class="row my-2">
+                    <h5>{{sand_data}}</h5>
+                    </div>
+                    <div class="row my-2">
+                    <h5>Sand Price</h5>
+                    <p class="units">-- in Rs. --</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        
+            <div class="col-md-3">
+                <div class="card text-center">
+                <div class="card-content">
+                    <div class="row my-2">
+                    <h5>{{steel_data}}</h5>
+                    </div>
+                    <div class="row my-2">
+                    <h5>Steel Price</h5>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row px-5 my-4">
+            <div class="cards-container">
+
+            <div class="col-md-3">
+                <div class="card text-center">
+                <div class="card-content">
+                    <div class="row my-2">
+                    <h5>{{brick_data}}</h5>
+                    </div>
+                    <div class="row my-2">
+                    <h5>Bricks Price</h5>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center">
+                <div class="card-content">
+                    <div class="row my-2">
+                    <h5>{{aggregates_data}}</h5>
+                    </div>
+                    <div class="row my-2">
+                    <h5>Aggregates Price</h5>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center">
+                <div class="card-content">
+                    <div class="row my-2">
+                    <h5>{{tiles_data}}</h5>
+                    </div>
+                    <div class="row my-2">
+                    <h5>Tiles Price</h5>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center">
+                <div class="card-content">
+                    <div class="row my-2">
+                    <h5>{{total_off_price}}</h5>
+                    </div>
+                    <div class="row my-2">
+                    <h5>Total Price</h5>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+         
+      {% endblock %}
