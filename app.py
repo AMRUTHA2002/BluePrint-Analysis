@@ -11,6 +11,7 @@ from PIL import Image
 import numpy as np
 import pandas as pd
 import re
+import tenserflow as tf
 
 app=Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
