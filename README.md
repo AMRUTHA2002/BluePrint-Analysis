@@ -22,7 +22,7 @@ This solution streamlines construction planning by combining **cost visualizatio
 - **OCR:** Tesseract OCR / EasyOCR
 - **Data Processing:** Pandas, NumPy
 - **Visualization:** Plotly, Matplotlib, or D3.js
-- **Data Scraping:** BeautifulSoup, Scrapy, or API calls
+- **Data Scraping:** BeautifulSoup
 
 ---
 
